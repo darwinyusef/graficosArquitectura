@@ -1,0 +1,13 @@
+@startuml
+left to right direction
+actor Usuario as u
+actor Admin as a
+rectangle Plataforma {
+  u --> (Registrar Usuario)
+  (Registrar Usuario) --> (Ingresar con Login)
+  (Registrar Usuario) --> (Modificar Datos)
+  a --> (Registrar Usuario) #line:red;line.bold;text:red  
+  (Registrar Usuario) --> (Ingresar con Login) #line:red;line.bold;text:red  
+  (Registrar Usuario) --> (Modificar Datos) #line:red;line.bold;text:red 
+}
+@enduml

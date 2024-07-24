@@ -1,0 +1,16 @@
+@startuml
+start
+:Usuario solicita registro en la plataforma;
+if (Datos básicos ingresados correctamente?) then (Sí)
+  :Crear cuenta de usuario;
+  if (Cuenta creada exitosamente?) then (Sí)
+    :Mostrar mensaje "Cuenta creada correctamente";
+    -> login
+  else (No)
+    :Mostrar mensaje de error "Error al crear cuenta";
+  endif
+else (No)
+  :Mostrar mensaje de error "Datos básicos incompletos o incorrectos";
+endif
+stop
+@enduml

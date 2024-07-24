@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor Yusef as y
+actor Hector as h
+
+package Chat-Whatsapp {
+  usecase "Enviar Datos" as a1
+  usecase "Visualizar Datos Text" as a2
+  usecase "Search de Stickers" as a3
+  usecase "Selector de Sticker" as a4
+  usecase "Enviar Stickers" as a5
+  usecase "Selector de Stickers" as a6
+}
+
+y --> a1 #line:green;line.bold;text:green : comment
+y --> a2 #line:red;line.bold;text:red  : comment
+y --> a6
+h --> a1
+h --> a2
+h --> a3
+h --> a4
+h --> a5
+h --> a6
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+start
+:Preparación de la bomba;
+
+split
+   #63D6EC:Configuración de kilotones;
+split again
+   :Configuración de tamaño;
+end split 
+
+:Elegir el tipo de bomba;
+
+if (¿Se configuro Correctamente?) then (Si)
+  :Aceptada;
+else (No)
+  :Reconfigurar;
+endif
+
+: Posicionarla ; 
+#palegreen: Simular la bomba ;
+#pink: Lanzarla ;
+#pink: Evaluar daños ; 
+
+stop
+@enduml
